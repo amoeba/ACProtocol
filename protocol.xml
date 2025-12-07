@@ -58,7 +58,8 @@
 			<value value="0x0008" name="SecureLogin" />
 			<value value="0x0009" name="UIQueue" text="S2C, game events (ordered) and other character related messages" />
 			<value value="0x000A" name="SmartBox" text="S2C, messages mostly related to object creation/deletion and their motion, effects" />
-			<value value="0x0008" name="Observer" />
+			<!-- (amoeba) Commented out since it collides with SecureLogin -->
+			<!-- <value value="0x0008" name="Observer" /> -->
 		</enum>
 		<enum name="C2SMessage" text="Client to Server message opcodes" parent="uint">
 			<value value="0xF653" name="Login_LogOffCharacter" />
@@ -1143,7 +1144,8 @@
 		</enum>
 		<enum name="EmoteType" parent="uint" text="The EmoteType identifies the type of emote action">
 			<value value="0x00" name="Invalid_EmoteType" />
-			<value value="0x00" name="Invalid_VendorEmoteType" />
+			<!-- (amoeba) Commented out since it collides with Invalid_EmoteType -->
+			<!-- <value value="0x00" name="Invalid_VendorEmoteType" /> -->
 			<value value="0x01" name="Act_EmoteType" />
 			<value value="0x02" name="AwardXP_EmoteType" />
 			<value value="0x03" name="Give_EmoteType" />
@@ -2877,7 +2879,8 @@
 			<value name="Baelzharon" value="Free" />
 		</enum>
 		<enum name="PortalBitmask" parent="int">
-			<value name="Undef" value="0x00" />
+			<!-- (amoeba): Commented out since it collides with NotPassable. -->
+			<!-- <value name="Undef" value="0x00" /> -->
 			<value name="NotPassable" value="0x00" />
 			<value name="Unrestricted" value="0x01" />
 			<value name="NoPk" value="0x02" />
@@ -5238,12 +5241,13 @@
 			<value value="0x20000000" name="LFGChannel" />
 			<value value="0x40000000" name="RoleplayChannel" />
 		</enum>
-		<enum name="EnchantmentMask" parent="uint">
+		<!-- (amoeba): Commented out because all field discriminants collide and this isn't used elsewhere -->
+		<!-- <enum name="EnchantmentMask" parent="uint">
 			<value value="0x03912021" name="Multiplicative" />
 			<value value="0x03912021" name="Additive" />
 			<value value="0x03912021" name="Vitae" />
 			<value value="0x03912021" name="Cooldown" />
-		</enum>
+		</enum> -->
 		<enum name="EnchantmentTypeFlags" parent="uint" mask="true">
 			<value value="0x0000000" name="Undef" />
 			<value value="0x0000001" name="Attribute" />
