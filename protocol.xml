@@ -1893,7 +1893,7 @@
 			<value value="0x7B" name="Thunder6Sound" text="Play Thunder6 Sound" />
 		</enum>
 		<enum name="MovementType" parent="byte" text="The movement type defines the fields for the rest of the message">
-			<value value="0x00" name="InterpertedMotionState" />
+			<value value="0x00" name="InterpretedMotionState" />
 			<value value="0x06" name="MoveToObject" />
 			<value value="0x07" name="MoveToPosition" />
 			<value value="0x08" name="TurnToObject" />
@@ -6466,7 +6466,7 @@
 			<field type="StanceMode" name="Stance" text="Current stance" />
 			<switch name="MovementType" summary-exclude="true">
 				<case value="0x0000">
-					<field name="State" type="InterpertedMotionState" text="Set of motion data" />
+					<field name="State" type="InterpretedMotionState" text="Set of motion data" />
 					<maskmap name="OptionFlags">
 						<mask value="0x01">
 							<field name="StickyObject" type="ObjectId" text="object to stick to" />
@@ -6494,7 +6494,7 @@
 				</case>
 			</switch>
 		</type>
-		<type name="InterpertedMotionState" text="Contains information for animations and general free motion">
+		<type name="InterpretedMotionState" text="Contains information for animations and general free motion">
 			<field name="Flags" type="uint">
 				<subfield name="CommandListLength" type="uint" value="(Flags &gt;&gt; 7) &amp; 0x7F" />
 			</field>
