@@ -6389,7 +6389,7 @@
 					<field name="CurrentStyle" type="StanceMode" text="Current stance.  If not present, defaults to 0x3D (NonCombat)" />
 				</mask>
 				<mask value="0x00000004">
-					<field name="ForwardCommand" type="MovementCommand" text="Command for our forward movement. If not present, defaults to 0x03 (Ready)" />
+					<field name="ForwardCommand" type="Command" text="Command for our forward movement. If not present, defaults to 0x03 (Ready)" />
 				</mask>
 				<mask value="0x0000008">
 					<field name="ForwardHoldkey" type="HoldKey" text="Whether forward key is being held" />
@@ -6398,7 +6398,7 @@
 					<field name="ForwardSpeed" type="float" text="Forward movement speed. If not present, defaults to 1.0" />
 				</mask>
 				<mask value="0x00000020">
-					<field name="SidestepCommand" type="MovementCommand" text="Command for our sidestep movememnt. If not present, defaults to 0x00" />
+					<field name="SidestepCommand" type="Command" text="Command for our sidestep movememnt. If not present, defaults to 0x00" />
 				</mask>
 				<mask value="0x00000040">
 					<field name="SidestepHoldkey" type="HoldKey" text="Whether sidestep key is being held" />
@@ -6407,7 +6407,7 @@
 					<field name="SidestepSpeed" type="float" text="Sidestep movement speed. If not present, defaults to 1.0" />
 				</mask>
 				<mask value="0x00000100">
-					<field name="TurnCommand" type="MovementCommand" text="Command for our turn movememnt. If not present, defaults to 0x00" />
+					<field name="TurnCommand" type="Command" text="Command for our turn movememnt. If not present, defaults to 0x00" />
 				</mask>
 				<mask value="0x00000200">
 					<field name="TurnHoldkey" type="uint" text="Whether turn key is being held" />
@@ -6503,13 +6503,13 @@
 					<field name="CurrentStyle" type="StanceMode" text="Stance.  If not present, defaults to 0x3D (NonCombat)" />
 				</mask>
 				<mask value="0x00000002">
-					<field name="ForwardCommand" type="MovementCommand" text="Command for our forward movement. If not present, defaults to 0x03 (Ready)" />
+					<field name="ForwardCommand" type="Command" text="Command for our forward movement. If not present, defaults to 0x03 (Ready)" />
 				</mask>
 				<mask value="0x00000008">
-					<field name="SidestepCommand" type="MovementCommand" text="Command for our sidestep movememnt. If not present, defaults to 0x00" />
+					<field name="SidestepCommand" type="Command" text="Command for our sidestep movememnt. If not present, defaults to 0x00" />
 				</mask>
 				<mask value="0x00000020">
-					<field name="TurnCommand" type="MovementCommand" text="Command for our turn movememnt. If not present, defaults to 0x00" />
+					<field name="TurnCommand" type="Command" text="Command for our turn movememnt. If not present, defaults to 0x00" />
 				</mask>
 				<mask value="0x00000004">
 					<field name="ForwardSpeed" type="float" text="Forward movement speed. If not present, defaults to 1.0" />
