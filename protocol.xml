@@ -2315,6 +2315,8 @@
 			<value value="0x197" name="OffhandPunchSlowLow" />
 		</enum>
 		<enum name="StanceMode" parent="ushort" text="The stance for a character or monster.">
+			<!-- Added Invalid = 0 to match ACE's MotionStance.Invalid = 0x80000000 (high bit stripped on wire) and to handle emote packets that send value 0 -->
+			<value value="0x00" name="Invalid" />
 			<value value="0x3C" name="HandCombat" />
 			<value value="0x3D" name="NonCombat" />
 			<value value="0x3E" name="SwordCombat" />
